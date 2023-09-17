@@ -1,0 +1,8 @@
+baseURL = 'https://example.org/'
+languageCode = 'ja-JP'
+title = 'n-mark.org'
+theme = "github-style"
+lastmod = true
+
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
