@@ -1,1 +1,3 @@
+id_rsa*
 .hugo_build.lock
+public/
