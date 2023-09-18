@@ -6,7 +6,7 @@ lastmod = true
 
 [params]
   author = "Naoki URAI"
-  description = "アバターは stable-diffusion で描いた時雨ちゃんです。fu〇ky〇u"
+  description = "アバターは stable-diffusion で描いた時雨ちゃんです。So cute!!"
   github = "naokiurai"
   facebook = "naoki.urai"
   twitter = "tw_nurai"
@@ -31,14 +31,15 @@ lastmod = true
 #    createIssueManually = true # 设置为true，如果是管理员登录，会自动创建issue，如果是false，需要管理员手动添加第一个评论(issue)
 #    distractionFreeMode = false # Enable hot key (cmd|ctrl + enter) submit comment.    
     proxy = "https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token" # 可以自行添加反向代理
-  [[params.links]]
-    title = "youtrust"
-    href = "https://youtrust.jp/users/e7338b38ec6f1eb0993e6a426cab037f"
-    icon = "https://daxgddo8oz9ps.cloudfront.net/users/profile_images/000/179/782/square/open-uri20230606-1-vo9o83"
+
   [[params.links]]
     title = "youtube"
     href = "https://www.youtube.com/@naoki-urai"
     icon = "/images/youtube.png"
+  [[params.links]]
+    title = "youtrust"
+    href = "https://youtrust.jp/users/e7338b38ec6f1eb0993e6a426cab037f"
+    icon = "/images/rokuro.jpg"
 
 [frontmatter]
   lastmod = ["lastmod", ":fileModTime", ":default"]
