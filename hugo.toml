@@ -3,6 +3,8 @@ languageCode = 'ja-JP'
 title = 'モンロー効果 / monroe effect'
 theme = "github-style"
 lastmod = true
+hasCJKLanguage = true
+summaryLength = 100
 
 [params]
   author = "Naoki URAI"
