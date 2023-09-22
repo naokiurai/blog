@@ -14,7 +14,7 @@
 <meta name="twitter:site" content="{{ $.Site.BaseURL }}" />
 <meta name="twitter:creator" content="{{ .Params.Author }}" />
 <meta name="twitter:image"
-  content="{{ if .IsHome }}{{ $.Site.Params.avatar | absURL }}{{ else }}{{ .Params.Cover | absURL }}{{ end }}">
+  content="{{ if .IsHome }}{{ $.Site.Params.ogImage | absURL }}{{ else }}{{ .Params.Cover | absURL }}{{ end }}">
 
 <!-- OG data -->
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
