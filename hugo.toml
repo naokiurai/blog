@@ -15,11 +15,12 @@ summaryLength = 100
   keywords = "blog, google analytics"
   rss = true
   lastmod = true
-  favicon = "/images/github.png"
+  favicon = "/favicons/favicon.ico"
   location = "JAP"
   userStatusEmoji = "🥴"
   enableGitalk = false
-    
+  ogImage="/images/avatars/2.png"
+
 #  [params.gitalk]
 #    clientID = "Your client ID" # Your client ID
 #    clientSecret = "Your client secret" # Your client secret
