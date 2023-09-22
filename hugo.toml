@@ -7,6 +7,7 @@ hasCJKLanguage = true
 summaryLength = 100
 
 [params]
+  twitterCreator = "@tw_nurai"
   author = "Naoki URAI"
   description = "アバターは stable-diffusion で描いた時雨ちゃんです。So cute!!"
   github = "naokiurai"

@@ -12,7 +12,7 @@
 <meta name="twitter:description"
   content="{{ if .IsHome }}{{ $.Site.Params.description }}{{ else }}{{ .Summary | plainify }}{{ end }}" />
 <meta name="twitter:site" content="{{ $.Site.BaseURL }}" />
-<meta name="twitter:creator" content="{{ .Params.Author }}" />
+<meta name="twitter:creator" content="{{ $.Site.Params.twitterCreator }}" />
 <meta name="twitter:image"
   content="{{ if .IsHome }}{{ $.Site.Params.ogImage | absURL }}{{ else }}{{ .Params.Cover | absURL }}{{ end }}">
 
