@@ -19,7 +19,8 @@ summaryLength = 100
   location = "JAP"
   userStatusEmoji = "🥴"
   enableGitalk = false
-    
+  ogImage="/images/avatars/2.png"
+
 #  [params.gitalk]
 #    clientID = "Your client ID" # Your client ID
 #    clientSecret = "Your client secret" # Your client secret
