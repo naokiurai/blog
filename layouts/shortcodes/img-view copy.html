@@ -1,0 +1,52 @@
+{{ $size := "200x" }}
+{{ $mobileSize := "100x100"}}
+
+<div class="img-view">
+<table>
+<tbody>
+    {{ range $idx, $elem := .Params }}
+        <div>$elem</div>
+        {{ $res := .Page.Resources.GetMatch $elem }}
+        {{ $image := $res.Resize $size }}
+
+        {{ $mobileImage := $res.Fit $mobileSize}}
+        {{ $imageURL := $image.RelPermalink }}
+        {{ $mobileImageURL := $mobileImage.RelPermalink}}
+        {{ if modBool $idx 3 }}
+            <tr>
+                <th>
+                    <a href="{{ $res.RelPermalink }}" target="_blank">
+                        <div class="thumb-img">
+                            <img class="pc" src="{{ $imageURL }}" alt="{{ $elem }}" width="{{ $image.Width }}" height="{{ $image.Height }}"/>
+                            <img class="sp" src="{{ $mobileImageURL }}" alt="{{ $elem }}" width="{{ $mobileImage.Width }}" height="{{ $mobileImage.Height }}"/>
+                            <p class="pc">クリックで拡大</p>
+                        </div>
+                    </a>
+                </th>
+
+        {{ else if modBool (add $idx 3) 3 }}
+                <th>
+                    <a href="{{ $res.RelPermalink }}" target="_blank">
+                        <div class="thumb-img">
+                            <img class="pc" src="{{ $imageURL }}" alt="{{ $elem }}" width="{{ $image.Width }}" height="{{ $image.Height }}"/>
+                            <img class="sp" src="{{ $mobileImageURL }}" alt="{{ $elem }}" width="{{ $mobileImage.Width }}" height="{{ $mobileImage.Height }}"/>
+                            <p class="pc">クリックで拡大</p>
+                        </div>
+                    </a>
+                </th>
+            </tr>
+        {{ else }}
+                <th>
+                    <a href="{{ $res.RelPermalink }}" target="_blank">
+                        <div class="thumb-img">
+                            <img class="pc" src="{{ $imageURL }}" alt="{{ $elem }}" width="{{ $image.Width }}" height="{{ $image.Height }}"/>
+                            <img class="sp" src="{{ $mobileImageURL }}" alt="{{ $elem }}" width="{{ $mobileImage.Width }}" height="{{ $mobileImage.Height }}"/>
+                            <p class="pc">クリックで拡大</p>
+                        </div>
+                    </a>
+                </th>
+        {{ end }}
+    {{ end }}
+</tbody>
+</table>
+</div>
