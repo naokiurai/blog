@@ -1,0 +1,17 @@
+{{- $src := .Get "src" }}
+{{- $remoteImage := resources.GetRemote $src }}
+{{- $title := .Get "title" }}
+{{- $width := .Get "w" }}
+{{- $size := printf "%sx" $width }}
+{{- $reseizedImage := $remoteImage.Resize $size }}
+{{- $thumbnailUrl := $reseizedImage.RelPermalink }}
+{{- $orgImageUrl := $remoteImage.RelPermalink }}
+
+<figure>
+  <a href="{{ $orgImageUrl }}" target="_blank">
+    <img src="{{ $thumbnailUrl }}" />
+  </a>
+  {{- with $title }}
+    <figcaption>{{ . }}</figcaption>
+  {{- end }}
+</figure>
